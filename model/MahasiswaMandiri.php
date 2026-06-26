@@ -48,9 +48,10 @@ class MahasiswaMandiri extends Mahasiswa
         $this->namaWali = $namaWali;
     }
 
+    // Polimorfisme
     public function hitungTagihanSemester()
     {
-        return $this->getTarifUktNominal();
+        return $this->getTarifUktNominal() + 100000;
     }
 
     public function tampilkanSpesifikasiAkademik()

@@ -48,6 +48,7 @@ class MahasiswaBidikmisi extends Mahasiswa
         $this->danaSakuSubsidi = $danaSakuSubsidi;
     }
 
+    // Polimorfisme
     public function hitungTagihanSemester()
     {
         return 0;
@@ -60,4 +61,4 @@ class MahasiswaBidikmisi extends Mahasiswa
     }
 }
 
-?>a
+?>

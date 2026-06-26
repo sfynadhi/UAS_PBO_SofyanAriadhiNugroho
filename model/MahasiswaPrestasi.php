@@ -48,9 +48,10 @@ class MahasiswaPrestasi extends Mahasiswa
         $this->minimalIpkSyarat = $minimalIpkSyarat;
     }
 
+    // Polimorfisme
     public function hitungTagihanSemester()
     {
-        return 0;
+        return $this->getTarifUktNominal() * 0.25;
     }
 
     public function tampilkanSpesifikasiAkademik()
