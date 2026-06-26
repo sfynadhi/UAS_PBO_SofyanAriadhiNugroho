@@ -7,19 +7,19 @@ class Koneksi
     private $password = "";
     private $database = "db_uas_pbo_trpl1a_sofyanapriadhinugroho";
 
-    protected $conn;
+    private $conn;
 
     public function __construct()
     {
-        $this->conn = new mysqli(
+        $this->conn = mysqli_connect(
             $this->host,
             $this->username,
             $this->password,
             $this->database
         );
 
-        if ($this->conn->connect_error) {
-            die("Koneksi gagal : " . $this->conn->connect_error);
+        if (!$this->conn) {
+            die("Koneksi Database Gagal : " . mysqli_connect_error());
         }
     }
 
