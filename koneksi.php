@@ -19,7 +19,7 @@ class Koneksi
         );
 
         if (!$this->conn) {
-            die("Koneksi gagal : " . mysqli_connect_error());
+            die("Koneksi database gagal : " . mysqli_connect_error());
         }
 
         mysqli_set_charset($this->conn, "utf8");
